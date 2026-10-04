@@ -245,7 +245,7 @@ CreateButton("Brainrot & Yumurta ESP Aç/Kapat", function()
                         local distance = math.floor((localHrp.Position - primary.Position).Magnitude)
                         
                         -- CRITICAL FIX: 400 metreden uzak olan (ve o 1 milyon m ötedeki) nesneleri tamamen ENGELLE
-                        if distance > 10000 then 
+                        if distance > 90000 then 
                             -- Eğer eski bir yazı etiketi kalmışsa onu da sil ki kasma yapmasın
                             if primary:FindFirstChild("ESPTextGui") then primary.ESPTextGui:Destroy() end
                             continue 
